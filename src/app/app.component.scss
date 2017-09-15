@@ -1,0 +1,246 @@
+//variables
+$cloudy-blue: #c5c7e0;
+$black: #0f0f0f;
+$greyish: #a6a6a6;
+$silver: #d9d9db;
+$white: #ffffff;
+$hospital-green: #8be8a3;
+$white-two: #f6f6f6;
+$warm-pink: #f63a7a;
+
+$fz-base: 1.6rem;
+$fz-md: 2rem;
+
+
+// reset
+button {
+    border: none;
+    background: none;
+    outline: none;
+}
+
+// base
+
+button, .btn, .dropdown {
+    cursor: pointer;
+}
+
+%flex-base {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel {
+    padding: 3rem 3.5rem;
+    background-color: $white;
+    box-shadow: 0 0.2rem 2rem 0 rgba(156, 160, 213, 0.34);
+}
+
+.badge {
+    font-size: 1.4rem;
+    color: $greyish;
+    display: inline-block;
+    padding: 0.7rem 2rem 0.9rem;
+
+    background-color: $white-two;
+
+    &.active {
+        background-color: $warm-pink;
+        color: $white;
+    }
+}
+
+.btn {
+    &--back {
+        font-size: $fz-md;
+        color: $silver;
+    }
+
+    &--green {
+        font-size: $fz-md;
+        color: $white;
+        
+        padding: 2rem 2.4rem;
+
+        background-color: $hospital-green;
+    }
+    
+    &--search {
+        font-size: $fz-md;
+    }
+
+    &--flat {
+        font-size: 1.4rem;
+        color: $black;
+    }
+}
+
+// styles
+.container {
+    height: 100%;
+}
+
+.bg-wrapper {
+    padding-bottom: 10rem;
+    background-color: $cloudy-blue;
+}
+
+.header {
+    @extend %flex-base;
+
+    padding: 0 2.3rem;
+
+    background-color: #fff;
+    box-shadow: 0 0.2rem 2rem 0 rgba(83, 87, 145, 0.72);
+}
+
+.tabs {
+    @extend %flex-base;
+}
+
+.tab {
+    font-size: $fz-md;
+    color: $silver;
+
+    padding: 2rem 0;
+
+    transition: color 0.2s;
+
+    &:not(:last-child) {
+        margin-right: 4.4rem;
+    }
+
+    &.active, &:hover {
+        color: $black;
+    }
+}
+
+.tools {
+    @extend %flex-base;
+}
+
+.user-menu {
+    font-size: $fz-md;
+}
+
+.location {
+    padding: 2.4rem 2rem 1.5rem;
+    
+    &__info {
+        font-size: 1.4rem;
+        color: $white;
+    }
+}
+
+.welcome {
+    padding-top: 7.5rem;
+    margin-bottom: 4.7rem;
+
+    background-image: url('http://media1.santabanta.com/full1/Creative/Abstract/abstract-823a.jpg');
+    background-size: cover;
+}
+
+.question-head {
+    max-width: 82rem;
+    margin: 0 auto;
+}
+
+.top {
+    @extend %flex-base;
+
+    justify-content: flex-start;
+    margin-bottom: 2.4rem;
+}
+
+.question-info {
+    margin-right: 3rem;
+}
+
+.title {
+    font-size: 3rem;
+    color: $black;
+
+    &--head {
+        margin-bottom: 3.3rem;
+    }
+
+    &--small {
+        font-size: 1.6rem;
+        margin: 0.8rem 0 0.9rem;
+    }
+
+    &--upper {
+        text-transform: uppercase;
+    }
+}
+
+.description {
+    font-size: 1.4rem;
+    color: $black;
+}
+
+.content {
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.filters {
+    @extend %flex-base;
+
+    margin-bottom: 3.1rem;
+    border-bottom: 0.2rem solid rgba(255, 255, 255, 0.41);
+}
+
+.count,
+.filter {
+    font-size: 2rem;
+    color: $white;
+
+    padding: 1.2rem 0;
+}
+
+.card {
+    @extend .panel;
+    @extend %flex-base;
+
+    position: relative;
+
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+
+    &__btn-menu {
+        font-size: 1.5rem;
+        margin-left: auto;
+    }
+}
+
+.created,
+.end-date,
+.participants {
+    font-size: 1.5rem;
+    color: rgba(15, 15, 15, 0.41);
+}
+
+.state {
+    padding-right: 4rem;
+}
+
+.info {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+
+    margin-right: 10rem;
+}
+
+.index {
+    position: absolute;
+    top: 1.1rem;
+    left: 1.4rem;
+
+    font-size: 1.4rem;
+    color: $black;
+}

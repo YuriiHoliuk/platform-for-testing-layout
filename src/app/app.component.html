@@ -1,20 +1,85 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo=">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://blog.angular.io//">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="container">
+  <header class="header">
+    <button class="btn btn--back">Back</button>
 
+    <div class="tabs">
+      <button class="tab">Questions</button>
+      <button class="tab active">Activations</button>
+      <button class="tab">Preview</button>
+    </div>
+
+    <div class="tools">
+      <button class="btn btn--green">Add Activation</button>
+      <button class="btn btn--search">Se</button>
+      <button class="user-menu dropdown">Me</button>
+    </div>
+
+  </header>
+  <div class="bg-wrapper">
+    <div class="location">
+      <span class="location__info">All tests / Тест по JS на тему: "Основы. Часть 06"</span>
+    </div>
+
+    <div class="welcome">
+      <div class="question-head panel">
+        <div class="top">
+          <span class="badge question-info">4 Questions 20 Points</span>
+          <button class="btn btn--flat">Edit Test</button>
+        </div>
+        <h1 class="title title--head">Тест по JS на тему: "Основы. Часть 06"</h1>
+        <p class="description">Содержит вопросы по созданию обьектов с помощью &quot;функций-конструкторов&quot…</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="filters">
+        <span class="count">Activations (3)</span>
+        <div class="filter dropdown">All Activations</div>
+      </div>
+
+      <div class="activations">
+        <div class="activation card">
+          <span class="index">1</span>
+          <div class="state">
+            <div class="badge active">Active</div>
+          </div>
+          <div class="info">
+            <div class="created">Created 3 days ago</div>
+            <div class="title title--small title--upper">Тест по JS на тему: "Основы. Часть 06"</div>
+            <div class="end-date">End in 5 days</div>
+          </div>
+          <div class="participants">4 Participants</div>
+          <div class="card__btn-menu btn btn--menu">Me</div>
+        </div>
+
+        <div class="activation card">
+          <span class="index">2</span>
+          <div class="state">
+            <div class="badge">Ended</div>
+          </div>
+          <div class="info">
+            <div class="created">Created 3 days ago</div>
+            <div class="title title--small title--upper">Тест по JS на тему: "Основы. Часть 06"</div>
+            <div class="end-date">End in 5 days</div>
+          </div>
+          <div class="participants">4 Participants</div>
+          <div class="card__btn-menu btn btn--menu">Me</div>
+        </div>
+
+        <div class="activation card">
+          <span class="index">3</span>
+          <div class="state">
+            <div class="badge">Ended</div>
+          </div>
+          <div class="info">
+            <div class="created">Created 3 days ago</div>
+            <div class="title title--small title--upper">Тест по JS на тему: "Основы. Часть 06"</div>
+            <div class="end-date">End in 5 days</div>
+          </div>
+          <div class="participants">4 Participants</div>
+          <div class="card__btn-menu btn btn--menu">Me</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
